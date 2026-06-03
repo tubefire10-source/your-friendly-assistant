@@ -157,6 +157,8 @@ export default function App() {
                   </div>
                 );
               })}
+              <YourBets addr={addr} />
+
             </aside>
           </div>
         </div>

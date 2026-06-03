@@ -73,15 +73,13 @@ export default function App() {
   if (view === "home") {
     return (
       <>
-        <div className="bg"><div className="blob b1" /><div className="blob b2" /><div className="blob b3" /><div className="ring r1" /><div className="ring r2" /><div className="dots d1" /><div className="dots d2" /></div>
-        <div className="app">
+        <div className="app zone-mode">
           <div className="topbar">
             <div className="logo">
-              <div className="mark">B</div>
               <div><h1>Bets<b>On</b>Block</h1><span>Provably fair · LitVM</span></div>
             </div>
             <div className="top-right">
-              <div className="live-head"><span className="pulse" /> Block <b className="mono" style={{ color: "#fff", marginLeft: 4 }}>#{head?.toLocaleString() ?? "…"}</b></div>
+              <div className="live-head"><span className="pulse" /> Block <b className="mono" style={{ marginLeft: 4 }}>#{head?.toLocaleString() ?? "…"}</b></div>
               <button className="btn btn-primary btn-sm" onClick={() => setView("zone")}>Enter Zone</button>
             </div>
           </div>
@@ -91,6 +89,7 @@ export default function App() {
       </>
     );
   }
+
 
   // ===== BETTING ZONE =====
   return (
